@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: orangered;">
+      <div class="container-fluid">
+        <a class="navbar-brand" onclick="location.href='/index'">
+          <strong>My Playlist Recommendation</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" onclick="location.href='/index'">메인화면</a>
+            </li>
+            <li class="nav-item active" >
+              <a class="nav-link" onclick="location.href='/recommendation'">추천받기</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                설정 및 관리
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" onclick="location.href='/add-playlist'" method='GET'>플레이리스트 추가</a></li>
+                <li><a class="dropdown-item" onclick="location.href='/modeling'" method='GET'>추천 모델 학습</a></li>
+                <li><a class="dropdown-item" onclick="location.href='/retrain'" method='GET'>모델 업데이트</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" onclick="location.href='/delete'" method='GET'>서비스 그만 이용하기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">How about My Favorite Song?</h1>
+          <br>
+          <p class="lead text-muted">
+          좋아하는 노래의 플레이리스트와
+          <br>
+          좋아하지 않는 노래의 플레이리스트를
+          </p>
+          <p class="lead text-center">
+          <I>최소한 하나씩 입력해주어야 오류가 나지 않습니다.</I>
+          </p>
+        </div>
+      </div>
+      </section>
+    <section class="py-5 text-left container">
+      <form action="/add-playlist/complete" method='POST'>
+        <div class="row mb-3">
+            <label for="YourName" class="col-sm-2 col-form-label">Your Name</label>
+            <div class="col-sm-10">
+              <input type="text" name="your_name" class="form-control" id="YourName" placeholder="당신의 ID를 입력해주세요. 재사용되니 신중하게!">
+            </div>
+          </div>
+        <div class="row mb-3">
+          <label for="PlaylistUsername" class="col-sm-2 col-form-label">Playlist Username</label>
+          <div class="col-sm-10">
+            <input type="text" name="username" class="form-control" id="PlaylistUsername" placeholder="플레이리스트의 유저 이름을 입력하세요.">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="PlaylistID" class="col-sm-2 col-form-label">Playlist ID</label>
+          <div class="col-sm-10">
+            <input type="text" name="playlist_id" class="form-control" id="PlalistID" placeholder="플레이리스트의 링크의 'playlist/{이 부분}?'이 id입니다.">
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Do You Like it?</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="liked" id="yes" value=1 checked>
+              <label class="form-check-label" for="yes">
+                Yes!
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="liked" id="no" value=0>
+              <label class="form-check-label" for="no">
+                No...
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">내 데이터 등록하기</button>
+      </form>
+    </section>
+  </body>
+</html>

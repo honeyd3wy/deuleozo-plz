@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: orangered;">
+    <div class="container-fluid">
+      <a class="navbar-brand" onclick="location.href='/index'">
+        <strong>My Playlist Recommendation</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" onclick="location.href='/index'">메인화면</a>
+          </li>
+          <li class="nav-item active" >
+            <a class="nav-link" onclick="location.href='/recommendation'">추천받기</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              설정 및 관리
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" onclick="location.href='/add-playlist'" method='GET'>플레이리스트 추가</a></li>
+              <li><a class="dropdown-item" onclick="location.href='/modeling'" method='GET'>추천 모델 학습</a></li>
+              <li><a class="dropdown-item" onclick="location.href='/retrain'" method='GET'>모델 업데이트</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" onclick="location.href='/delete'" method='GET'>서비스 그만 이용하기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light"> Complete! </h1>
+          <br>
+          <p class="lead text-muted">
+          {{ status }} 완료!
+          </p>
+          <p class="lead text-center">
+            <I><strong>TIP</strong>
+            <br>추천 정확도를 높이고 싶다면 더 많은 플레이리스트를 추가해주세요.</I>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
