@@ -1,10 +1,11 @@
 # deuleozo-plz
-제가 좋아하는 노래는 어떠세요? 들어주세요....제발.
+_제가 좋아하는 노래는 어떠세요? 들어주세요....제발._
 
 - flask app 배포 연습용으로 만든 개인 토이 프로젝트입니다.
 
-샘플 모델의 데이터는 이쪽에서 얻었습니다.
-https://www.kaggle.com/bricevergnou/spotify-recommendation
+- 샘플 모델의 데이터는 이쪽에서 얻었습니다.
+
+  : https://www.kaggle.com/bricevergnou/spotify-recommendation
 
 
 ### 접속 방법
@@ -38,7 +39,9 @@ https://www.kaggle.com/bricevergnou/spotify-recommendation
 >  시간이 조금 걸릴 수 있습니다. 인내심을 가지고 기다려주세요.
 
 3. 설정 및 관리 -> 추천 모델 학습
+
 4. 추천받기 -> 사용자 닉네임 입력
+
 5. 조금만 기다리시면 결과가 나옵니다.
 
 사람마다 결과가 다른 이유는, 좋아할 확률이 65%가 넘는 노래들만 나오기 때문이예요.
