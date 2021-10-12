@@ -10,11 +10,27 @@ _제가 좋아하는 노래는 어떠세요? 들어주세요....제발._
   : https://www.kaggle.com/bricevergnou/spotify-recommendation
 
 
-### 0. 사용된 자체 제작 모듈
+
+## Info.
+
+
+### I. What is this App?
+
+![](https://drive.google.com/uc?export=download&id=14RYT284Xka0hxTGDxJgwmIVCu_ajortD)
+
+### II. Data Pipeline
+
+![](https://drive.google.com/uc?export=download&id=12Mee1uI2wl-iW5mMJEAag5-GwwYNgNNJ)
+
+### III. 사용된 자체 제작 모듈
 
 - API로 데이터 수집하는 코드 : https://github.com/honeyd3wy/pr3mylibrary1/blob/main/pr3mylibrary1/get_myplaylist_api.py
 - 데이터를 다루는 코드 : https://github.com/honeyd3wy/pr3mylibrary2/blob/main/pr3mylibrary2/data_handling.py
 - 랜덤포레스트 모델링 코드 : https://github.com/honeyd3wy/pr3mylibrary3/blob/main/pr3mylibrary3/model.py
+
+
+
+## How to Use It?
 
 
 ### I. 접속 방법
