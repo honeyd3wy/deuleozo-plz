@@ -10,6 +10,12 @@ _제가 좋아하는 노래는 어떠세요? 들어주세요....제발._
   : https://www.kaggle.com/bricevergnou/spotify-recommendation
 
 
+### 0. 사용된 자체 제작 모듈
+
+- API로 데이터 수집하는 모듈 : https://github.com/honeyd3wy/pr3mylibrary1.git
+- 데이터를 다루는 모듈 : https://github.com/honeyd3wy/pr3mylibrary2.git
+- 랜덤포레스트 모델링 모듈 : https://github.com/honeyd3wy/pr3mylibrary3.git
+
 
 ### I. 접속 방법
 1. CLI 창에 `$ git clone https://github.com/honeyd3wy/deuleozo-plz.git` 을 입력해 레포지토리를 클론합니다.
