@@ -12,9 +12,9 @@ _제가 좋아하는 노래는 어떠세요? 들어주세요....제발._
 
 ### 0. 사용된 자체 제작 모듈
 
-- API로 데이터 수집하는 모듈 : https://github.com/honeyd3wy/pr3mylibrary1.git
-- 데이터를 다루는 모듈 : https://github.com/honeyd3wy/pr3mylibrary2.git
-- 랜덤포레스트 모델링 모듈 : https://github.com/honeyd3wy/pr3mylibrary3.git
+- API로 데이터 수집하는 코드 : https://github.com/honeyd3wy/pr3mylibrary1/blob/main/pr3mylibrary1/get_myplaylist_api.py
+- 데이터를 다루는 코드 : https://github.com/honeyd3wy/pr3mylibrary2/blob/main/pr3mylibrary2/data_handling.py
+- 랜덤포레스트 모델링 코드 : https://github.com/honeyd3wy/pr3mylibrary3/blob/main/pr3mylibrary3/model.py
 
 
 ### I. 접속 방법
