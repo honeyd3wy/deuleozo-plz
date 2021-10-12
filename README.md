@@ -1,7 +1,7 @@
 # deuleozo-plz
 _제가 좋아하는 노래는 어떠세요? 들어주세요....제발._
 
-![](https://drive.google.com/file/d/1JUZRMkaYuyxDW3p3ko-w9UCFODWKttTu/view?usp=sharing)
+![](https://drive.google.com/uc?id=1JUZRMkaYuyxDW3p3ko-w9UCFODWKttTu)
 
 - flask app 배포 연습용으로 만든 개인 토이 프로젝트입니다.
 
