@@ -145,7 +145,7 @@ def delete_col():
         df_merge = dh.MergeMongoDB().merge_all_data(dir=dir)
         # DB에 저장
         df_sql = dh.transform_df(df_merge)
-        conn = sqlite3.connect(f'{dir}/total_userdata/.db')
+        conn = sqlite3.connect(f'{dir}/total_userdata/total.db')
         df_sql.to_sql(f'{dir}/total_userdata/total_userdata.db', conn, if_exists='replace')
         conn.close()
         return render_template('complete.html', status=status)
